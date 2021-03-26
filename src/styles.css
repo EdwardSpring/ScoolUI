@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  --brand-color: #1D7CF2 !important;
+  font-family: 'general';
+}
+
+/* brand color in rgb rgb(29,124,242) */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'general';
+  src: url(./assets/fonts/SourceSansPro-Regular.otf);
+}
+
+.c-btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  /* font-size: 16px; */
+  cursor: pointer;
+}
+
+.c-btn:active {
+  box-shadow: 2px 0 6px 2px rgba(0, 0, 0, 0.4);
+}
+
+.c-btn-brand {
+  background-color: var(--brand-color);
+  color: #fff !important;
+}
+
+.c-btn-good {
+  background-color: green;
+}
+
+.c-btn-bad {
+  background-color: #ff0000;
+}
+
+.c-btn-dark {
+  background-color: #000;
+}
+
+.c-btn-hover-left-arrow::before {
+  transition: 0.5s;
+  content: '';
+}
+
+.c-btn-hover-left-arrow:hover::before {
+  transition: 0.5s;
+  content: '\2190';
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.c-btn-hover-right-arrow::after {
+  transition: 0.5s;
+  content: '';
+}
+
+.c-btn-hover-right-arrow:hover::after {
+  transition: 0.5s;
+  content: '\2192';
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.c-alert-error {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #ff0000;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.c-alert-brand {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--brand-color);
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.disabled {
+  background-color: rgba(29, 124, 242, 0.5);
+  cursor: not-allowed;
+}

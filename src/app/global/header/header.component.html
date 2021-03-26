@@ -1,0 +1,16 @@
+<div class="main">
+    <div class="header">
+        <div class="logo-div">
+            <img class="logo" src="{{logoUrl}}" alt="" (click)="goHome()" style="cursor: pointer;" />
+        </div>
+
+        <nav class="desktop-nav">
+            <a class="nav-link" [routerLink]="['/staff/dashboard']" routerLinkActive="router-link-active"
+                [hidden]="!isLoggedIn||onDashboard">Dashboard</a>
+            <a class="nav-link" [routerLink]="['auth/login']" routerLinkActive="router-link-active"
+                [hidden]="isLoggedIn||onLoginPage">Login</a>
+            <a class="nav-link" [routerLink]="['/routePath']" routerLinkActive="router-link-active">Courses</a>
+            <a class="nav-link" [routerLink]="['/routePath']" routerLinkActive="router-link-active">Take A Quiz</a>
+        </nav>
+    </div>
+</div>

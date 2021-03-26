@@ -1,0 +1,27 @@
+<section class="main">
+    <nav>
+        <!-- <div class="inner-nav"> -->
+        <a routerLink="/admin" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <span class="link-icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <span class="link-text">Dashboard</span>
+        </a>
+
+        <a [routerLink]="['/admin/']" routerLinkActive="router-link-active">
+            <span class="link-icon"> <i class="fa fa-list" aria-hidden="true"></i> </span>
+            <span class="link-text">Faculties</span>
+        </a>
+        <a [routerLink]="['/admin/']" routerLinkActive="router-link-active">
+            <span class="link-icon"> <i class="fa fa-list" aria-hidden="true"></i> </span>
+            <span class="link-text">Departments</span>
+        </a>
+        <a [routerLink]="['/admin/']" routerLinkActive="router-link-active">
+            <span class="link-icon"> <i class="fa fa-list" aria-hidden="true"></i> </span>
+            <span class="link-text">Staff</span>
+        </a>
+        <a [routerLink]="['/admin/students']" routerLinkActive="active">
+            <span class="link-icon"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> </span>
+            <span class="link-text">Students</span>
+        </a>
+        <!-- </div> -->
+    </nav>
+</section>

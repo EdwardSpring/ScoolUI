@@ -1,0 +1,27 @@
+<section class="main">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+    <div class="body">
+        <div class="side-content">
+            <app-sidebar>12345678</app-sidebar>
+        </div>
+        <div class="main-content container">
+
+            <div class="row justify-content-center" *ngIf="!closed">
+                <div><i class="fa fa-times text-danger" aria-hidden="true" (click)="close()"></i></div>
+            </div>
+
+            <div *ngIf="showOptions">
+                <button type="submit" class="btn btn-primary mb-2 mr-sm-2" (click)="showAddComponent()">New
+                    Student</button>
+                <button type="submit" class="btn btn-primary mb-2 mr-sm-2" (click)="showSearchComponent()">Search
+                    Student</button>
+            </div>
+
+            <app-student-search *ngIf="displaySearchStudent"></app-student-search>
+            <app-student-add *ngIf="displayAddStudent"></app-student-add>
+            <app-student-search-result *ngIf="displaySearchResult"></app-student-search-result>
+        </div>
+    </div>
+</section>

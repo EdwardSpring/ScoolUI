@@ -1,0 +1,91 @@
+
+
+.clickable{
+    margin: 5% 0;
+    font-size: 2rem;
+}
+
+
+.second-view-title{
+    text-align: center;
+    /* color: #fff; */
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .first-view{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat( 1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-side{
+        padding: 3%;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+    .hero-text{
+        margin: 5% 0;
+    }
+
+    .hero-div{
+        width: 100%;
+    }
+
+    .hero{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .first-view{
+        display: grid;
+        grid-template-columns: repeat( 2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-side{
+        padding: 3%;
+    }
+
+    .hero-text{
+        margin: 5% 0;
+    }
+
+    .hero-div{
+        width: 500px;
+    }
+
+    .hero{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    
+
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

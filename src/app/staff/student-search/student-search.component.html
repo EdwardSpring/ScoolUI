@@ -1,0 +1,39 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search Student Name or Number..."
+        aria-label="Recipient's username" aria-describedby="basic-addon2" [formControl]="searchControl">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Search</button>
+    </div>
+
+</div>
+<table class="table table-hover table-responsive-sm">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Reg No.</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Department</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <th scope="row">{{student.studentID}}</th>
+            <td>{{student.personDetail.firstName}}</td>
+            <td>{{student.personDetail.lastName}}</td>
+            <td>{{student.personDetail.email}}</td>
+            <td>{{student.personDetail.phone}}</td>
+            <td>{{student.department.departmentName}}</td>
+            <th>
+                <a href="">edit</a>
+                <!-- <a (click)=editCustomer(customer)>edit</a> -->
+                <br>
+                <a href="">delete</a>
+                <!-- <a (click)=deleteCustomer(customer)>delete</a> -->
+            </th>
+        </tr>
+
+    </tbody>
+</table>

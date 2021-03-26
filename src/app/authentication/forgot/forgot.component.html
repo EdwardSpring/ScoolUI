@@ -1,0 +1,39 @@
+<section class="main">
+    <div class="image-div">
+        <button class="c-btn back" onclick="history.back();">&#8592;</button>
+        <img class="animate__fadeInLeft animate__bounceIn image" src="../../../assets/images/loginImage.png" alt="">
+    </div>
+
+    <div class="form-div">
+        <h1 class="welcome-text">Forgot Password</h1>
+        <form class="animate__fadeInRight animate__bounceIn form" (ngSubmit)="onSubmit()" [formGroup]="form"
+            #loginForm=ngForm>
+
+            <div class="c-alert-error" *ngIf="submitted">
+                <p>Invalid login details</p>
+            </div>
+
+
+
+            <h1 class="action-text">Reset your password</h1>
+            <div class="c-alert-brand">
+                <small>Enter your email <br> to receive a password reset link</small>
+            </div>
+            <div>
+                <input type="text" id="" placeholder="email" class="input" required formControlName="email">
+            </div>
+
+            <div>
+                <button class="c-btn c-btn-brand login" [disabled]="!loginForm.valid"
+                    [class.disabled]="!loginForm.valid">Reset</button>
+            </div>
+
+            <div class="auth-options">
+                <a href="" class="link">Create Account</a>
+                <a [routerLink]="['/login']" routerLinkActive="router-link-active" class="link fr">Login</a>
+            </div>
+
+
+        </form>
+    </div>
+</section>

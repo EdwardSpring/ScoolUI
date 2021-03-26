@@ -1,0 +1,55 @@
+.main {
+  background-color: var(--brand-color);
+  height: 100vh;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav {
+    display: grid;
+    /* border: 1px solid red; */
+  }
+
+  .active {
+    background-color: rgba(16, 108, 247, 0.1);
+    font-size: 1.6rem;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+
+  }
+
+
+  nav a {
+    margin: 2% 0;
+    padding: 5% 0% 5% 20%;
+    font-size: 1rem;
+    font-weight: 700;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+
+  .link-icon {
+    margin-right: 5px;
+  }
+
+  nav a:hover {
+    background-color: rgba(16, 108, 247, 0.1);
+    font-size: 1.6rem;
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

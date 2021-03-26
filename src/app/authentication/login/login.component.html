@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="main">
+    <div class="left-side">
+        <!-- <button class="c-btn back" onclick="history.back();"><i class="fa fa-arrow-left"
+        aria-hidden="true"></i></button> -->
+        <div class="image-div">
+            <img class="animate__fadeInLeft animate__bounceIn image" src="../../../assets/images/loginImage.png" alt="">
+        </div>
+    </div>
+
+    <div class="form-div">
+        <h1 class="welcome-text">Welcome Back</h1>
+        <form class="animate__fadeInRight animate__bounceIn form" (ngSubmit)="onSubmit()" [formGroup]="form"
+            #loginForm=ngForm>
+
+
+
+            <h1>Login to your account</h1>
+
+            <div class="c-alert-error" *ngIf="submitted">
+                <p>Invalid login details</p>
+            </div>
+
+            <div>
+                <input type="text" id="" placeholder="email" class="input" required formControlName="email" autofocus>
+            </div>
+
+            <div>
+                <input type="password" placeholder="password" class="input" formControlName="password">
+            </div>
+
+            <div>
+                <button (click)="login()" class="c-btn c-btn-brand login" [disabled]="!loginForm.valid"
+                    [class.disabled]="!loginForm.valid">Log
+                    in</button>
+            </div>
+
+            <div class="auth-options">
+                <a [routerLink]="['/auth/register']" class="link">Create Account</a>
+                <a [routerLink]="['/auth/forgot']" routerLinkActive="router-link-active" class="link fr">Forgot
+                    Password</a>
+            </div>
+        </form>
+    </div>
+</section>

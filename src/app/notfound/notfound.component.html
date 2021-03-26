@@ -1,0 +1,13 @@
+<div class="con">
+    <app-header></app-header>
+    <div class="inner-con">
+        <h1 class="error-code animate__hinge">404</h1>
+        <p class="title">Sorry, that page doesn't exist!</p>
+        <p class="sub-title">We're going to fix it up and have things back to normal pretty soon</p>
+
+        <button class="c-btn c-btn-brand c-btn-hover-left-arrow clickable" [routerLink]="['']"
+            routerLinkActive="router-link-active">Back Home</button>
+        <br>
+        <button class="c-btn c-btn-brand c-btn-hover-left-arrow clickable" onclick="history.back()">Last Page</button>
+    </div>
+</div>

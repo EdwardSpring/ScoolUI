@@ -1,0 +1,35 @@
+<h3>Add Student</h3>
+
+<form class="form-inline mb-4">
+    <form [formGroup]="studentForm" (submit)="addStudent()" class="form-inline mb-4">
+        <!-- <form class="form-inline mb-4"> -->
+        <label class="sr-only" for="Name">First Name</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="firstName" placeholder="First Name">
+        </div>
+
+        <label class="sr-only" for="Name">Last Name</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+        </div>
+
+        <label class="sr-only" for="Name">Email</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="email" placeholder="Email">
+        </div>
+
+        <label class="sr-only" for="Phone">Phone</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <input type="text" class="form-control" formControlName="phone" placeholder="Phone">
+        </div>
+
+        <label class="sr-only" for="membership">Dept</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <select formControlName="departmentID" class="form-control">
+                <option>404</option>
+                <option>401</option>
+                <option>402</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 mr-sm-2">Add Student</button>
+    </form>
